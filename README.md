@@ -1,5 +1,9 @@
 # Recall
 
+## Preferred Editor
+Please use Visual Studio Community
+
+
 ### Standard Procedure on committing.
 
 1. Do edits on your own branch.

@@ -21,7 +21,7 @@ public class CharController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.anyKey)
+        if (Input.GetButton("HorizontalKey") || Input.GetButton("VerticalKey"))
         {
             Move();
         }

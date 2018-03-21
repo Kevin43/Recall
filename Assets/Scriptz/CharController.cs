@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharController : MonoBehaviour {
 
@@ -24,6 +25,11 @@ public class CharController : MonoBehaviour {
         if (Input.GetButton("HorizontalKey") || Input.GetButton("VerticalKey"))
         {
             Move();
+        }
+        if (transform.position.y < -2)
+        {
+            //Respawn(); TODO: add respawn function
+            SceneManager.LoadScene(1);
         }
     }
 

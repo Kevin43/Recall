@@ -18,7 +18,7 @@ public class BaseEnemy : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 
-        Debug.Log("yeet");
+        //Debug.Log("yeet");
 
         if (health <= 0)
         {
@@ -32,7 +32,7 @@ public class BaseEnemy : MonoBehaviour {
         Destroy(this.gameObject);
     }
 
-    public TakeDamage()
+    public void TakeDamage()
     {
         
     }

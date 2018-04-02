@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class EnemyTest : BaseEnemy {
 
+    [SerializeField]
     private int enemyHealth;
+    [SerializeField]
     private string enemyName;
 
 
 	// Use this for initialization
 	void Start () {
-        enemyHealth = health;
+        health = enemyHealth;
 	}
 	
 	// Update is called once per frame
